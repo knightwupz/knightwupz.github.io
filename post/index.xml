@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Websites of WU Pengze</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 29 Apr 2017 16:50:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 09 Jun 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://knightwupz.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>感觉被全世界抛弃</title>
+      <link>https://knightwupz.github.io/2017/06/%E6%84%9F%E8%A7%89%E8%A2%AB%E5%85%A8%E4%B8%96%E7%95%8C%E6%8A%9B%E5%BC%83/</link>
+      <pubDate>Fri, 09 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://knightwupz.github.io/2017/06/%E6%84%9F%E8%A7%89%E8%A2%AB%E5%85%A8%E4%B8%96%E7%95%8C%E6%8A%9B%E5%BC%83/</guid>
+      <description>&lt;p&gt;约不到的人，送不出去的生日礼物，那就烂在心头吧&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>胡搞一个博客</title>
@@ -28,36 +39,6 @@
 cd themes git clone https://github.com/digitalcraftsman/hugo-icarus-theme.git  启动本地调试查看效果： hugo server --theme=hugo-icarus-theme --buildDrafts --watch
 在浏览器中打开网址即可查看本地站点的内容：http://localhost:1313/
 将本地站点资料同步到github仓库 这一步主要是方便以后的资料管理，比如可以在不同的笔记本上分别编辑不同的文件，并保持内容同步。 参考：https://gohugo.io/tutorials/github-pages-blog/ 。 1. 在github上“-hugo”仓库用于存储本地站点资料。 2. 在本地站点根目录下初始化git仓库：git init 3. 查看本地内容改动：git status 4. 将改动文件添加到本地git仓库：git add xx_files，并添加改动评语：git commit -m &#39;20170429 test my hugo websites&#39; 5.</description>
-    </item>
-    
-    <item>
-      <title>Migrate from Jekyll</title>
-      <link>https://knightwupz.github.io/2015/10/migrate-from-jekyll/</link>
-      <pubDate>Sat, 10 Oct 2015 13:07:31 +0200</pubDate>
-      
-      <guid>https://knightwupz.github.io/2015/10/migrate-from-jekyll/</guid>
-      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
-▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
-    </item>
-    
-    <item>
-      <title>New Post</title>
-      <link>https://knightwupz.github.io/2015/05/new-post/</link>
-      <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://knightwupz.github.io/2015/05/new-post/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>New Post</title>
-      <link>https://knightwupz.github.io/2015/05/new-post/</link>
-      <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://knightwupz.github.io/2015/05/new-post/</guid>
-      <description>&lt;p&gt;the time is not correct
-&lt;/p&gt;</description>
     </item>
     
   </channel>
