@@ -1,18 +1,53 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Websites of WU Pengze</title>
+    <title>Categories on 泽郴老仙 —— 目前只是学习笔记</title>
     <link>https://knightwupz.github.io/categories/</link>
-    <description>Recent content in Categories on Websites of WU Pengze</description>
+    <description>Recent content in Categories on 泽郴老仙 —— 目前只是学习笔记</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sat, 29 Apr 2017 16:50:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 03 Mar 2018 16:01:23 +0800</lastBuildDate>
     
 	<atom:link href="https://knightwupz.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Blogs</title>
+      <title>docs</title>
+      <link>https://knightwupz.github.io/categories/docs/</link>
+      <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://knightwupz.github.io/categories/docs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>index</title>
+      <link>https://knightwupz.github.io/categories/index/</link>
+      <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://knightwupz.github.io/categories/index/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shortcodes</title>
+      <link>https://knightwupz.github.io/categories/shortcodes/</link>
+      <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://knightwupz.github.io/categories/shortcodes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pipelines</title>
+      <link>https://knightwupz.github.io/categories/pipelines/</link>
+      <pubDate>Sat, 29 Apr 2017 16:50:00 +0800</pubDate>
+      
+      <guid>https://knightwupz.github.io/categories/pipelines/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blogs</title>
       <link>https://knightwupz.github.io/categories/blogs/</link>
       <pubDate>Sat, 29 Apr 2017 16:50:00 +0800</pubDate>
       
@@ -21,29 +56,11 @@
     </item>
     
     <item>
-      <title>Category</title>
-      <link>https://knightwupz.github.io/categories/category/</link>
-      <pubDate>Fri, 09 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://knightwupz.github.io/categories/category/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Programming</title>
+      <title>programming</title>
       <link>https://knightwupz.github.io/categories/programming/</link>
       <pubDate>Thu, 17 Sep 2015 13:47:08 +0200</pubDate>
       
       <guid>https://knightwupz.github.io/categories/programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Subcategory</title>
-      <link>https://knightwupz.github.io/categories/subcategory/</link>
-      <pubDate>Fri, 09 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://knightwupz.github.io/categories/subcategory/</guid>
       <description></description>
     </item>
     

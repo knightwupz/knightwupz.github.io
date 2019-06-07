@@ -1,49 +1,54 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Websites of WU Pengze</title>
+    <title>Posts on 泽郴老仙 —— 目前只是学习笔记</title>
     <link>https://knightwupz.github.io/post/</link>
-    <description>Recent content in Posts on Websites of WU Pengze</description>
+    <description>Recent content in Posts on 泽郴老仙 —— 目前只是学习笔记</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Fri, 09 Jun 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 03 Mar 2018 16:01:23 +0800</lastBuildDate>
     
 	<atom:link href="https://knightwupz.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>感觉被全世界抛弃</title>
-      <link>https://knightwupz.github.io/2017/06/%E6%84%9F%E8%A7%89%E8%A2%AB%E5%85%A8%E4%B8%96%E7%95%8C%E6%8A%9B%E5%BC%83/</link>
-      <pubDate>Fri, 09 Jun 2017 00:00:00 +0000</pubDate>
+      <title>Git的基本使用方法</title>
+      <link>https://knightwupz.github.io/post/notes/git%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>https://knightwupz.github.io/2017/06/%E6%84%9F%E8%A7%89%E8%A2%AB%E5%85%A8%E4%B8%96%E7%95%8C%E6%8A%9B%E5%BC%83/</guid>
-      <description>&lt;p&gt;始终都约不到的人，两年也送不出去的生日礼物，都烂在心里吧。&lt;/p&gt;
+      <guid>https://knightwupz.github.io/post/notes/git%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
+      <description>Git的基本使用方法 安装 下载官方网站最新版本：https://git-scm.com/downloads， 支持Windows，Linux/U</description>
+    </item>
+    
+    <item>
+      <title>Image Preview</title>
+      <link>https://knightwupz.github.io/post/image-preview/</link>
+      <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://knightwupz.github.io/post/image-preview/</guid>
+      <description>&lt;p&gt;Thanks for &lt;a href=&#34;https://github.com/liwenyip/hugo-easy-gallery&#34;&gt;liwenyip/hugo-easy-gallery&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://github.com/xianmin/hugo-theme-jane/pull/48&#34;&gt;Zebradil · Pull Request #48&lt;/a&gt; .&lt;/p&gt;
 
-&lt;p&gt;“他怎么样？”
-“他很好。”
-“哪儿好了？”
-“哪儿都好。”&lt;/p&gt;
+&lt;p&gt;Now, we could use &lt;code&gt;{{&amp;lt; gallery &amp;gt;}}&lt;/code&gt; shortcode in hugo-theme-jane.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;h2 id=&#34;normal-image&#34;&gt;Normal Image&lt;/h2&gt;
+
+&lt;p&gt;This is an image in &lt;code&gt;static/image&lt;/code&gt; folder.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;![&lt;span class=&#34;nt&#34;&gt;This is an image in `static/image` folder.&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;/image/example.jpg&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
     </item>
     
     <item>
       <title>胡搞一个博客</title>
-      <link>https://knightwupz.github.io/2017/04/%E8%83%A1%E6%90%9E%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/</link>
+      <link>https://knightwupz.github.io/post/blogs/%E8%83%A1%E6%90%9E%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Sat, 29 Apr 2017 16:50:00 +0800</pubDate>
       
-      <guid>https://knightwupz.github.io/2017/04/%E8%83%A1%E6%90%9E%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/</guid>
-      <description>胡搞一个博客 hugo简介 git简介 生成本地站点 首先创建一个新的本地站点，命名为knightwupz-hugo： hugo new site knightwupz-hugo
-切换到新站点目录里： cd knightwupz-hugo
-创建一个新的页面“about”： hugo new about.md
-再创建一个新的页面“post/first”: hugo new post/first.md
-注意hugo new命令创建的页面都位于content目录里。
-查看页面内容： cat content/post/first.md, 已经自动生成了如下内容：
-+++ date = &amp;quot;2017-04-29T15:06:24+08:00&amp;quot; draft = true title = &amp;quot;first&amp;quot; +++  此时可以自由编辑新创建的“first”文件内容，使用markdown格式。
-在hugo 的github网站上下载网页模板：
-cd themes git clone https://github.com/digitalcraftsman/hugo-icarus-theme.git  启动本地调试查看效果： hugo server --theme=hugo-icarus-theme --buildDrafts --watch
-在浏览器中打开网址即可查看本地站点的内容：http://localhost:1313/
-将本地站点资料同步到github仓库 这一步主要是方便以后的资料管理，比如可以在不同的笔记本上分别编辑不同的文件，并保持内容同步。 参考：https://gohugo.io/tutorials/github-pages-blog/ 。 1. 在github上“-hugo”仓库用于存储本地站点资料。 2. 在本地站点根目录下初始化git仓库：git init 3. 查看本地内容改动：git status 4. 将改动文件添加到本地git仓库：git add xx_files，并添加改动评语：git commit -m &#39;20170429 test my hugo websites&#39; 5.</description>
+      <guid>https://knightwupz.github.io/post/blogs/%E8%83%A1%E6%90%9E%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>胡搞一个博客 hugo简介 git简介 生成本地站点 首先创建一个新的本地站点，命名为knightwupz-hugo：hugo new site knightwupz-hugo 。切换到新站点目</description>
     </item>
     
   </channel>
