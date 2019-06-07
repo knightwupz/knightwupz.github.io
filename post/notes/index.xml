@@ -19,18 +19,5 @@
       <description>Git的基本使用方法 安装 下载官方网站最新版本：https://git-scm.com/downloads， 支持Windows，Linux/U</description>
     </item>
     
-    <item>
-      <title></title>
-      <link>https://knightwupz.github.io/post/notes/git-bash%E4%B8%AD%E6%96%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://knightwupz.github.io/post/notes/git-bash%E4%B8%AD%E6%96%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</guid>
-      <description>git bash中文显示问题
-在Windows中使用git bash遇到了中文乱码的问题，当提交中文名字的文档“Git的基本使用方法.md”并添加评论git commit -m &amp;quot;first note&amp;quot;后，git显示中文乱码：
-1 2 3  [master 4c7cc5d] first note 1 file changed, 6 insertions(+) create mode 100644 &amp;#34;Git\347\232\204\345\237\272\346\234\254\344\275\277\347\224\250\346\226\271\346\263\225.md&amp;#34;   造成乱码的几个原因主要有
- Windows默认使用GB2312来处理文件名和内容，但Git默认使用UTF-8 Git命令在输出log的时候会使用less这个工具，默认和Windows的编码格式不兼容 不同的命令行工具（终端）对环境变量的处理方式不同  解决的办法是统一使用UTF-8编码。需要修改的设置有： 1. 设置 Git 支持 utf-8 编码
-1 2 3 4 5  git config --global core.quotepath false # 不对0x80以上的字符进行quote，解决git status/commit时中文文件名乱码 git config --global i18n.commitencoding utf-8 # 提交信息编码 git config --global i18n.logoutputencoding utf-8 # 输出log编码 git config --global svn.</description>
-    </item>
-    
   </channel>
 </rss>
