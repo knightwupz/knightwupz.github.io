@@ -3,10 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Categories - WUPZ -- A website for my learning notes of something interested</title>
+  <title> - 泽郴老仙 —— 目前只是学习笔记</title>
   
-<link rel="alternate" hreflang="" href="https://knightwupz.github.io/categories/" />
-
 
 <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
@@ -25,7 +23,12 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="Wu Pengze" />
-  <meta name="description" content="A website of WUPZ supported by Hugo." />
+  <meta name="description" content="git bash中文显示问题
+在Windows中使用git bash遇到了中文乱码的问题，当提交中文名字的文档“Git的基本使用方法.md”并添加评论git commit -m &amp;quot;first note&amp;quot;后，git显示中文乱码：
+1 2 3  [master 4c7cc5d] first note 1 file changed, 6 insertions(&#43;) create mode 100644 &amp;#34;Git\347\232\204\345\237\272\346\234\254\344\275\277\347\224\250\346\226\271\346\263\225.md&amp;#34;   造成乱码的几个原因主要有
+ Windows默认使用GB2312来处理文件名和内容，但Git默认使用UTF-8 Git命令在输出log的时候会使用less这个工具，默认和Windows的编码格式不兼容 不同的命令行工具（终端）对环境变量的处理方式不同  解决的办法是统一使用UTF-8编码。需要修改的设置有： 1. 设置 Git 支持 utf-8 编码
+1 2 3 4 5  git config --global core.quotepath false # 不对0x80以上的字符进行quote，解决git status/commit时中文文件名乱码 git config --global i18n.commitencoding utf-8 # 提交信息编码 git config --global i18n.logoutputencoding utf-8 # 输出log编码 git config --global svn." />
+
   <meta name="keywords" content="WUPZ, NGS, bioinformatics, Deep Learning" />
 
 
@@ -36,8 +39,7 @@
 <meta name="generator" content="Hugo 0.55.6" />
 
 
-<link rel="canonical" href="https://knightwupz.github.io/en/categories/" />
-<link href="%7balternate%20%7bRSS%20application/rss&#43;xml%20%20index%20alternate%20%20false%20false%20true%20false%20false%200%7d%20/en/categories/index.xml%20https://knightwupz.github.io/en/categories/index.xml%7d" rel="alternate" type="application/rss+xml" title="WUPZ -- A website for my learning notes of something interested" />
+<link rel="canonical" href="https://knightwupz.github.io/post/notes/git-bash%E4%B8%AD%E6%96%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/" />
 
 
 
@@ -59,18 +61,37 @@
 
 
 
-<meta property="og:title" content="Categories" />
-<meta property="og:description" content="A website of WUPZ supported by Hugo." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://knightwupz.github.io/en/categories/" />
-<meta property="og:site_name" content="WUPZ -- A website for my learning notes of something interested" />
+<meta property="og:title" content="" />
+<meta property="og:description" content="git bash中文显示问题
+在Windows中使用git bash遇到了中文乱码的问题，当提交中文名字的文档“Git的基本使用方法.md”并添加评论git commit -m &quot;first note&quot;后，git显示中文乱码：
+1 2 3  [master 4c7cc5d] first note 1 file changed, 6 insertions(&#43;) create mode 100644 &#34;Git\347\232\204\345\237\272\346\234\254\344\275\277\347\224\250\346\226\271\346\263\225.md&#34;   造成乱码的几个原因主要有
+ Windows默认使用GB2312来处理文件名和内容，但Git默认使用UTF-8 Git命令在输出log的时候会使用less这个工具，默认和Windows的编码格式不兼容 不同的命令行工具（终端）对环境变量的处理方式不同  解决的办法是统一使用UTF-8编码。需要修改的设置有： 1. 设置 Git 支持 utf-8 编码
+1 2 3 4 5  git config --global core.quotepath false # 不对0x80以上的字符进行quote，解决git status/commit时中文文件名乱码 git config --global i18n.commitencoding utf-8 # 提交信息编码 git config --global i18n.logoutputencoding utf-8 # 输出log编码 git config --global svn." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://knightwupz.github.io/post/notes/git-bash%E4%B8%AD%E6%96%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/" />
+<meta property="og:site_name" content="泽郴老仙 —— 目前只是学习笔记" />
 
-<meta itemprop="name" content="Categories">
-<meta itemprop="description" content="A website of WUPZ supported by Hugo.">
+<meta itemprop="name" content="">
+<meta itemprop="description" content="git bash中文显示问题
+在Windows中使用git bash遇到了中文乱码的问题，当提交中文名字的文档“Git的基本使用方法.md”并添加评论git commit -m &quot;first note&quot;后，git显示中文乱码：
+1 2 3  [master 4c7cc5d] first note 1 file changed, 6 insertions(&#43;) create mode 100644 &#34;Git\347\232\204\345\237\272\346\234\254\344\275\277\347\224\250\346\226\271\346\263\225.md&#34;   造成乱码的几个原因主要有
+ Windows默认使用GB2312来处理文件名和内容，但Git默认使用UTF-8 Git命令在输出log的时候会使用less这个工具，默认和Windows的编码格式不兼容 不同的命令行工具（终端）对环境变量的处理方式不同  解决的办法是统一使用UTF-8编码。需要修改的设置有： 1. 设置 Git 支持 utf-8 编码
+1 2 3 4 5  git config --global core.quotepath false # 不对0x80以上的字符进行quote，解决git status/commit时中文文件名乱码 git config --global i18n.commitencoding utf-8 # 提交信息编码 git config --global i18n.logoutputencoding utf-8 # 输出log编码 git config --global svn.">
 
+
+
+<meta itemprop="wordCount" content="95">
+
+
+
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Categories"/>
-<meta name="twitter:description" content="A website of WUPZ supported by Hugo."/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="git bash中文显示问题
+在Windows中使用git bash遇到了中文乱码的问题，当提交中文名字的文档“Git的基本使用方法.md”并添加评论git commit -m &quot;first note&quot;后，git显示中文乱码：
+1 2 3  [master 4c7cc5d] first note 1 file changed, 6 insertions(&#43;) create mode 100644 &#34;Git\347\232\204\345\237\272\346\234\254\344\275\277\347\224\250\346\226\271\346\263\225.md&#34;   造成乱码的几个原因主要有
+ Windows默认使用GB2312来处理文件名和内容，但Git默认使用UTF-8 Git命令在输出log的时候会使用less这个工具，默认和Windows的编码格式不兼容 不同的命令行工具（终端）对环境变量的处理方式不同  解决的办法是统一使用UTF-8编码。需要修改的设置有： 1. 设置 Git 支持 utf-8 编码
+1 2 3 4 5  git config --global core.quotepath false # 不对0x80以上的字符进行quote，解决git status/commit时中文文件名乱码 git config --global i18n.commitencoding utf-8 # 提交信息编码 git config --global i18n.logoutputencoding utf-8 # 输出log编码 git config --global svn."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -88,7 +109,7 @@
 <body>
   <div id="mobile-navbar" class="mobile-navbar">
   <div class="mobile-header-logo">
-    <a href="/en/" class="logo">WUPZ</a>
+    <a href="/" class="logo">WUPZ</a>
   </div>
   <div class="mobile-navbar-icon">
     <span></span>
@@ -103,7 +124,7 @@
           
           
             <a class="menu-item-link" href="https://knightwupz.github.io" rel="noopener" target="_blank">
-              Home
+              主页
               
               <i class="iconfont">
                 <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -121,35 +142,45 @@
         
           
           
-            <a class="menu-item-link" href="https://knightwupz.github.io/en/post/blogs">Blogs</a>
+            <a class="menu-item-link" href="https://knightwupz.github.io/post/blogs">博客</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <div class="mobile-menu-parent">
+            <span class="mobile-submenu-open"></span>
+            <a href="https://knightwupz.github.io/post/notes">
+              笔记
+            </a>
+          </div>
+          <ul class="mobile-submenu-list">
+            
+              <li>
+                <a href="https://knightwupz.github.io/post/image-preview/">Image Preview</a>
+              </li>
+            
+          </ul>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://knightwupz.github.io/post/pipelines">流程</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://knightwupz.github.io/en/post/notes">Notes</a>
+            <a class="menu-item-link" href="https://knightwupz.github.io/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://knightwupz.github.io/en/post/pipelines">Pipelines</a>
-          
-        
-      </li><li class="mobile-menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="https://knightwupz.github.io/en/tags/">Tags</a>
-          
-        
-      </li><li class="mobile-menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="https://knightwupz.github.io/en/categories/">Categories</a>
+            <a class="menu-item-link" href="https://knightwupz.github.io/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
@@ -184,20 +215,20 @@
 </svg>
 
             </i>
-            Language
+            语言
           </a>
         </div>
         <ul class="mobile-submenu-list">
           
             <li>
               
-                <a href="https://knightwupz.github.io/">中文</a>
+                <a href="https://knightwupz.github.io/"><strong>中文</strong></a>
               
             </li>
           
             <li>
               
-                <a href="https://knightwupz.github.io/en/"><strong>English</strong></a>
+                <a href="https://knightwupz.github.io/en/">English</a>
               
             </li>
           
@@ -271,7 +302,7 @@
 
   <header id="header" class="header container">
     <div class="logo-wrapper">
-  <a href="/en/" class="logo">
+  <a href="/" class="logo">
     
       WUPZ
     
@@ -287,7 +318,7 @@
           
           
             <a class="menu-item-link" href="https://knightwupz.github.io" rel="noopener" target="_blank">
-              Home
+              主页
               
               <i class="iconfont">
                 <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -309,7 +340,34 @@
         
           
           
-            <a class="menu-item-link" href="https://knightwupz.github.io/en/post/blogs">Blogs</a>
+            <a class="menu-item-link" href="https://knightwupz.github.io/post/blogs">博客</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          <a class="menu-item-link menu-parent" href="https://knightwupz.github.io/post/notes">笔记</a>
+          <ul class="submenu">
+            
+              <li>
+                <a href="https://knightwupz.github.io/post/image-preview/">Image Preview</a>
+              </li>
+            
+          </ul>
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://knightwupz.github.io/post/pipelines">流程</a>
           
 
         
@@ -320,7 +378,7 @@
         
           
           
-            <a class="menu-item-link" href="https://knightwupz.github.io/en/post/notes">Notes</a>
+            <a class="menu-item-link" href="https://knightwupz.github.io/tags/">标签</a>
           
 
         
@@ -331,29 +389,7 @@
         
           
           
-            <a class="menu-item-link" href="https://knightwupz.github.io/en/post/pipelines">Pipelines</a>
-          
-
-        
-
-      </li>
-    
-        <li class="menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="https://knightwupz.github.io/en/tags/">Tags</a>
-          
-
-        
-
-      </li>
-    
-        <li class="menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="https://knightwupz.github.io/en/categories/">Categories</a>
+            <a class="menu-item-link" href="https://knightwupz.github.io/categories/">分类</a>
           
 
         
@@ -393,16 +429,16 @@
 </svg>
 
           </i>
-          English
+          中文
         </a>
         <ul class="submenu">
           
             
-              <li>
-                <a href="https://knightwupz.github.io/">中文</a>
-              </li>
-            
           
+            
+              <li>
+                <a href="https://knightwupz.github.io/en/">English</a>
+              </li>
             
           
         </ul>
@@ -417,15 +453,184 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title"></h1>
+      
+      <div class="post-meta">
+        <time datetime="0001-01-01" class="post-time">
+          0001-01-01
+        </time>
+        
+        <span class="more-meta"> 约 95 字 </span>
+          <span class="more-meta"> 预计阅读 1 分钟 </span>
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#参考资料">参考资料</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      
+
+<p>git bash中文显示问题</p>
+
+<p>在Windows中使用git bash遇到了中文乱码的问题，当提交中文名字的文档“Git的基本使用方法.md”并添加评论<code>git commit -m &quot;first note&quot;</code>后，git显示中文乱码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">[master 4c7cc5d] first note
+ 1 file changed, 6 insertions(+)
+ create mode 100644 &#34;Git\347\232\204\345\237\272\346\234\254\344\275\277\347\224\250\346\226\271\346\263\225.md&#34;</pre></td></tr></table>
+</div>
+</div>
+<p>造成乱码的几个原因主要有</p>
+
+<ol>
+<li>Windows默认使用GB2312来处理文件名和内容，但Git默认使用UTF-8</li>
+<li>Git命令在输出log的时候会使用less这个工具，默认和Windows的编码格式不兼容</li>
+<li>不同的命令行工具（终端）对环境变量的处理方式不同</li>
+</ol>
+
+<p>解决的办法是统一使用UTF-8编码。需要修改的设置有：
+1. 设置 Git 支持 utf-8 编码</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git config --global core.quotepath false # 不对0x80以上的字符进行quote，解决git status/commit时中文文件名乱码
+git config --global i18n.commitencoding utf-8 # 提交信息编码
+git config --global i18n.logoutputencoding utf-8 # 输出log编码
+git config --global svn.pathnameencoding GB2312 # 支持中文路径
+export LESSCHARSET=utf-8 # git log 默认使用less分页，所以需要bash对less命令进行utf-8编码</pre></td></tr></table>
+</div>
+</div>
+<ol>
+<li><p>gui显示中文</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git config --global gui.encoding utf-8 # 图形界面编码</pre></td></tr></table>
+</div>
+</div></li>
+
+<li><p>针对Windows的其他命令行工具
+在系统环境变量中添加LESSCHARSET变量，其值设置为utf-8，可解决windows其他命令行工具如Powershell, cmd和cmder的中文乱码问题。</p></li>
+</ol>
+
+<h2 id="参考资料">参考资料</h2>
+
+<p><a href="https://gist.github.com/nightire/5069597">解决 Git 在 windows 下中文乱码的问题</a>
+<a href="https://devopshub.cn/2018/01/07/g4e-faq-4-git-encoding-error/">g4e常见问题#4 解决Git在Windows上的中文乱码问题</a></p>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Wu Pengze</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">0001-01-01</span>
+  </p>
   
-  
-  
-  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+
+    <footer class="post-footer">
+      
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/notes/git%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">Git的基本使用方法</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        
+      </nav>
+    </footer>
+  </article>
 
   
   
 
+  
+  
+
+  
+
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "xianmin/comments-for-hugo-theme-jane"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+
+    
 
         </div>
       </div>
@@ -457,7 +662,7 @@
     </a>
 
 
-<a href="https://knightwupz.github.io/en/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://knightwupz.github.io/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -528,6 +733,13 @@
 
 <script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
 
+  <script type="text/javascript">
+    window.MathJax = {
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
 
 
