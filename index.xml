@@ -5,10 +5,926 @@
     <link>https://knightwupz.github.io/</link>
     <description>Recent content on 泽郴老仙 —— 目前只是学习笔记</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 07 Jun 2019 16:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 10 Jun 2019 17:30:05 +0800</lastBuildDate>
     
         <atom:link href="https://knightwupz.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Markdown语法规则</title>
+      <link>https://knightwupz.github.io/post/blogs/markdown%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99/</link>
+      <pubDate>Mon, 10 Jun 2019 17:30:05 +0800</pubDate>
+      
+      <guid>https://knightwupz.github.io/post/blogs/markdown%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99/</guid>
+      
+        <description>&lt;h1 id=&#34;markdown语法规则&#34;&gt;Markdown语法规则&lt;/h1&gt;
+
+&lt;p&gt;前言：本网站的所有内容都是基于markdown语法规则，使用VS Code编辑器，并加载了Markdown Preview Enhanced 0.4.1,本文将简介基础的mardown语法规则，和基于扩展包的扩展规则。&lt;/p&gt;
+
+&lt;h2 id=&#34;1-markdown语法兼容html语法&#34;&gt;1. Markdown语法兼容HTML语法&lt;/h2&gt;
+
+&lt;p&gt;Markdown语法兼容html语法，可以使用html标签设置字体格式，颜色等：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;# 示例代码
+ &amp;lt;div align=&amp;#34;center&amp;#34; style=&amp;#34;color:red&amp;#34;&amp;gt;使用 Markdown 编写文档&amp;lt;/div&amp;gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;示例效果：&lt;/p&gt;
+
+&lt;p&gt;&lt;div align=&#34;center&#34; style=&#34;color:red&#34;&gt;使用 Markdown 编写文档&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;可以借用html语法书写上下标：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;# 示例代码
+H&amp;lt;sub&amp;gt;2&amp;lt;/sub&amp;gt;O  CO&amp;lt;sub&amp;gt;2&amp;lt;/sub&amp;gt;
+爆米&amp;lt;sup&amp;gt;TM&amp;lt;/sup&amp;gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;示例效果：&lt;/p&gt;
+
+&lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;O  CO&lt;sub&gt;2&lt;/sub&gt;
+爆米&lt;sup&gt;TM&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;2-标题&#34;&gt;2. 标题&lt;/h2&gt;
+
+&lt;p&gt;标题格式为若干个&lt;code&gt;#&lt;/code&gt; + &lt;code&gt;titile&lt;/code&gt;，拥有几个&lt;code&gt;#&lt;/code&gt;符号表示第几级，最多支持6级子标题,注意&lt;code&gt;#&lt;/code&gt;与标题之间要有空格&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;#代码
+# 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题
+####### 不支持7级或更多子标题，反正字数太小也看不清&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;效果：&lt;/p&gt;
+
+&lt;h1 id=&#34;一级标题-ignore-true&#34;&gt;一级标题 {ignore=true}&lt;/h1&gt;
+
+&lt;h2 id=&#34;二级标题-ignore-true&#34;&gt;二级标题 {ignore=true}&lt;/h2&gt;
+
+&lt;h3 id=&#34;三级标题-ignore-true&#34;&gt;三级标题 {ignore=true}&lt;/h3&gt;
+
+&lt;h4 id=&#34;四级标题-ignore-true&#34;&gt;四级标题 {ignore=true}&lt;/h4&gt;
+
+&lt;h5 id=&#34;五级标题-ignore-true&#34;&gt;五级标题 {ignore=true}&lt;/h5&gt;
+
+&lt;h6 id=&#34;六级标题-ignore-true&#34;&gt;六级标题 {ignore=true}&lt;/h6&gt;
+
+&lt;p&gt;####### 不支持7级或更多子标题，反正字数太小也看不清 {ignore=true}&lt;/p&gt;
+
+&lt;h2 id=&#34;3-目录&#34;&gt;3. 目录&lt;/h2&gt;
+
+&lt;p&gt;显示目录需要扩展包的支持，本文使用的是Markdown Preview Enhanced 0.4.1，其可根据标题级别生成目录，并可设置显示的级别。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;# 示例代码：显示本文目录
+[TOC]
+
+# 注意： 若某级标题不需要在目录中出现，可在该标题后面添加参数`{ignore=true}`&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;示例效果：&lt;/p&gt;
+
+&lt;p&gt;[TOC]&lt;/p&gt;
+
+&lt;h2 id=&#34;4-段落&#34;&gt;4. 段落&lt;/h2&gt;
+
+&lt;p&gt;每一个自然段前后都要空行，如果只是换行而没有多出中间的空行，编辑器将认为上下两端是同一段文字。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;#示例代码
+段落1
+段落2*&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;示例效果：&lt;/p&gt;
+
+&lt;p&gt;段落1
+段落2*&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;#示例代码
+段落1
+
+段落2*&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;示例效果：&lt;/p&gt;
+
+&lt;p&gt;段落1&lt;/p&gt;
+
+&lt;p&gt;段落2*&lt;/p&gt;
+
+&lt;h2 id=&#34;5-区块引用&#34;&gt;5. 区块引用&lt;/h2&gt;
+
+&lt;p&gt;使用右括号&lt;code&gt;&amp;gt;&lt;/code&gt;表示区块引用：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;#示例代码
+&amp;gt; 引用1 随便写点东西
+&amp;gt;&amp;gt; 引用2
+&amp;gt;&amp;gt; 引用2 ## 此两行将显示为同一行，
+&amp;gt;&amp;gt;&amp;gt; 引用3.1
+&amp;gt;&amp;gt;&amp;gt;
+&amp;gt;&amp;gt;&amp;gt; 引用3.2 # 3.1和3.2之间多了一个空行
+&amp;gt;&amp;gt;&amp;gt;&amp;gt; 引用4.1 
+&amp;gt;&amp;gt;&amp;gt;&amp;gt; \
+&amp;gt;&amp;gt;&amp;gt;&amp;gt; 引用4.2 通过添加一行引用符`&amp;gt;`加上转义符`\`，可以达到换行且两行之间没有空行的效果。
+&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; 引用5 可以一直嵌套引用
+&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; 引用6 可以一直嵌套引用
+&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; 引用7 可以一直嵌套引用
+&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; 引用8 可以一直嵌套引用&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;示例效果：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;引用1 随便写点东西
+&amp;gt; 引用2.1
+&amp;gt; 引用2.2
+&amp;gt;&amp;gt; 引用3 引用可以嵌套
+&amp;gt;&amp;gt;&amp;gt; 引用4 引用可以嵌套
+&amp;gt;&amp;gt;&amp;gt;&amp;gt; 引用5 引用可以嵌套&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;6-代码区块&#34;&gt;6. 代码区块&lt;/h2&gt;
+
+&lt;p&gt;位于文章内段落中间的小段代码，可以用一对反引号表示：&lt;code&gt;code&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;对于大段的代码区块，则用成对的3个反引号括住，在其中书写代码，或者将所有代码都缩进一个制表符。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;# 示例代码
+# 方法1：用成对的3个反引号括住
+    ```python #此行可添加语言标记
+    print(&amp;#34;Something&amp;#34;)
+    ```
+# 方法2：在代码前面添加一个制表符
+        print(&amp;#34;nothing&amp;#34;) #test前面加一个相当于4个空格的制表符，或直接用四个空格&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;示例效果：&lt;/p&gt;
+
+&lt;p&gt;方法1：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python #此行可添加语言标记&#34; data-lang=&#34;python #此行可添加语言标记&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python #此行可添加语言标记&#34; data-lang=&#34;python #此行可添加语言标记&#34;&gt;print(&amp;#34;Something&amp;#34;)&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;方法2：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;print(&amp;#34;nothing&amp;#34;)&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;7-列表&#34;&gt;7. 列表&lt;/h2&gt;
+
+&lt;p&gt;Markdown 支持无序列表（用&lt;code&gt;*&lt;/code&gt;, &lt;code&gt;+&lt;/code&gt;, &lt;code&gt;-&lt;/code&gt;作为一行开头）和有序列表（用数字作为行首）。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;# 示例代码
+
+# 无序列表的三种表示方法，分别是用*，+，-开头并接一个空格，后面是列表内容
+
+无序列表1
+
+* 苹果，西瓜
+* 橘子，菠萝
+* 香蕉，
+    
+    草莓
+
+无序列表2：
+
+- 猴子
+- 豹子
+- 狗子
+
+无序列表3：
+
++ 电脑  
+    &amp;gt; 屏幕
+    &amp;gt;
+    &amp;gt; 主机
++ 手机
+    
+        print(&amp;#34;mobilephone&amp;#34;)
++ 平板
+
+# 有序列表用数字开始，数字后是英文字符.和一个空格，然后是列表内容。注意数字编号不一定要完全按照顺序写，但列表第一项最好还是以1开头
+
+1. 眼睛
+1. 鼻子
+5. 耳朵 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;示例效果：&lt;/p&gt;
+
+&lt;p&gt;无序列表1
+* 苹果，西瓜
+* 橘子，菠萝
+* 香蕉，&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;草莓&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;无序列表2：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;猴子&lt;/li&gt;
+&lt;li&gt;豹子&lt;/li&gt;
+&lt;li&gt;狗子&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;无序列表3：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;电脑&lt;br /&gt;
+&amp;gt; 屏幕
+&amp;gt;
+&amp;gt; 主机&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;手机&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;print(&amp;#34;mobilephone&amp;#34;)&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;平板&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;有序列表：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;眼睛&lt;/li&gt;
+&lt;li&gt;鼻子&lt;/li&gt;
+&lt;li&gt;耳朵&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;注意事项：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;列表内项目可以包括不止一段内容，每个段落都需要首行缩进以表示其是该列表子项目的一部分。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;列表内可以包含引用和代码块。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;8-分割线&#34;&gt;8. 分割线&lt;/h2&gt;
+
+&lt;p&gt;有以下几种方式都可以建立分割线：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;# 示例代码：
+* * *
+***
+*****
+- - -
+---------------------------------------&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;示例效果：&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;9-插入网页链接&#34;&gt;9. 插入网页链接&lt;/h2&gt;
+
+&lt;p&gt;有两种方式可以插入链接：行内式和参考式。当链接较多时后者更方便。&lt;/p&gt;
+
+&lt;p&gt;行内式格式为&lt;code&gt;[example](links &amp;quot;titile&amp;quot;)&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;参考式格式分两部分，第一部分是在要插入链接的位置标记好id&lt;code&gt;[example][id]&lt;/code&gt;， 该链接将显示成example的名字，接着在全文任意地方(一般是全文最后以注解，脚注或参考文献的方式标出)将该id代表的网址和标题按格式写在后面&lt;code&gt;[id]: links &amp;quot;titile&amp;quot;&lt;/code&gt;，id可以是字母、数字、空白和标点符号，但不区分大小写。 简短的网址也可以直接用方括号括起来，markdown会将该网址直接转变成一个链接&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;#示例代码：行内式插入链接
+[Blog of WUPZ](https://knightwupz.github.io/ &amp;#39;MY Blog&amp;#39;)
+
+# 示例代码：参考式插入链接
+[百度][2] 
+
+
+
+# 示例代码：自动链接
+&amp;lt;https://knightwupz.github.io&amp;gt;
+&amp;lt;username@126.com&amp;gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;示例效果：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://knightwupz.github.io/&#34; title=&#34;MY Blog&#34;&gt;Blog of WUPZ&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://knightwupz.github.io/&#34; title=&#34;MY Blog&#34;&gt;Blog of WUPZ&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://knightwupz.github.io&#34;&gt;https://knightwupz.github.io&lt;/a&gt;
+&lt;a href=&#34;mailto:username@126.com&#34;&gt;username@126.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;10-插入图片&#34;&gt;10. 插入图片&lt;/h2&gt;
+
+&lt;p&gt;插入图片与插入链接的格式有些类似，也有两种行内式和参考式两种方式，书写格式分别是在插入链接的格式之前添加一个&lt;code&gt;!&lt;/code&gt;。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;行内式格式：
+![picture](links &amp;#34;titile&amp;#34;)
+
+参考式格式：
+[picture][id]
+
+
+
+# 注意：
+# 1. links表示图片的存放地址，可以是相对当前文档的路径，也可以是网络上公开的图片网址
+# 2. markdown暂时没办法指定图片大小，如有需要可以参考html语法添加&amp;lt;img&amp;gt;标签插入图片&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;11-字体强调&#34;&gt;11. 字体强调&lt;/h2&gt;
+
+&lt;p&gt;在需要强调的内容前后分别加上一个或两个&lt;code&gt;*&lt;/code&gt;,可以达到使该段内容变成斜体或加粗的效果。&lt;code&gt;*&lt;/code&gt;也可换成&lt;code&gt;_&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;# 示例代码
+
+*斜体*
+
+_斜体_
+
+**加粗**
+
+__加粗__
+
+***斜体+加粗***
+
+**_斜体+加粗_**
+
+&amp;lt;i&amp;gt;斜体&amp;lt;/i&amp;gt;  
+            &amp;lt;b&amp;gt;加粗&amp;lt;/b&amp;gt;  
+            &amp;lt;em&amp;gt;强调&amp;lt;/em&amp;gt;  
+            &amp;lt;u&amp;gt;下划线&amp;lt;/u&amp;gt;   
+            &amp;lt;del&amp;gt;删除&amp;lt;/del&amp;gt;  
+            Z&amp;lt;sup&amp;gt;a&amp;lt;/sup&amp;gt;  
+            Z&amp;lt;sub&amp;gt;a&amp;lt;/sub&amp;gt;  
+            &amp;lt;kbd&amp;gt;Ctrl&amp;lt;/kbd&amp;gt;
+
+# 以下代码需要扩展包
+
+==背景色==
+
+~~删除~~&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;示例效果：&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;斜体&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;斜体&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;加粗&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;_&lt;em&gt;加粗&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;斜体加粗&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;斜体加粗&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;斜体加粗&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;斜体加粗&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;斜体&lt;/i&gt;&lt;br /&gt;
+            &lt;b&gt;加粗&lt;/b&gt;&lt;br /&gt;
+            &lt;em&gt;强调&lt;/em&gt;&lt;br /&gt;
+            &lt;u&gt;下划线&lt;/u&gt;&lt;br /&gt;
+            &lt;del&gt;删除&lt;/del&gt;&lt;br /&gt;
+            Z&lt;sup&gt;a&lt;/sup&gt;&lt;br /&gt;
+            Z&lt;sub&gt;a&lt;/sub&gt;&lt;br /&gt;
+            &lt;kbd&gt;Ctrl&lt;/kbd&gt;&lt;/p&gt;
+
+&lt;p&gt;==背景色==&lt;/p&gt;
+
+&lt;p&gt;&lt;del&gt;删除&lt;/del&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;12-特殊字符&#34;&gt;12. 特殊字符&lt;/h2&gt;
+
+&lt;p&gt;有些特殊字符需要在前面加入反斜杠来表示，这些字符包括：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;\   反斜线
+`   反引号
+*   星号
+_   底线
+{}  花括号
+[]  方括号
+()  括弧
+#   井字号
++   加号
+-   减号
+.   英文句点
+!   惊叹号&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;markdown扩展语法&#34;&gt;Markdown扩展语法&lt;/h2&gt;
+
+&lt;p&gt;本部分的语法需要加载扩展包，推荐使用Markdown Preview Enhanced最新版。&lt;/p&gt;
+
+&lt;h3 id=&#34;表格&#34;&gt;表格&lt;/h3&gt;
+
+&lt;p&gt;markdown表格使用&lt;code&gt;|&lt;/code&gt;作为列与列之间的分隔符，每一行要有相同的&lt;code&gt;|&lt;/code&gt;个数。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;# 示例代码
+
+| 表格  | 第一列          | 第二列    |
+|:----|:----------------:|----------:| 
+| 第一行| 写点什么         | 吧 |
+| 第二行| 还是空着     |   好了 |
+| 第三行 | 就这样      |   吧 |
+
+# 注意：|:----|:----------------:|----------:| 这一行只能写在第二行，：表示对其方式，写在左边表示左对齐，写在右边表示右对齐，写在两边表示居中对齐&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;表格&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;第一列&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;第二列&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;第一行&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;写点什么&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;吧&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;第二行&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;还是空着&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;好了&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;第三行&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;就这样&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;吧&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;数学公式&#34;&gt;数学公式&lt;/h3&gt;
+
+&lt;p&gt;Markdown Preview Enhanced 默认使用KaTeX渲染数学表达式，可在设置中更改为MathJax。KaTeX速度更快，但不如MathJax支持的特性多。&lt;/p&gt;
+
+&lt;p&gt;行内公式使用 &lt;code&gt;$...$&lt;/code&gt; 或者 &lt;code&gt;\(...\)&lt;/code&gt; 分隔符表示，一个大段区块的数学公式用 &lt;code&gt;$$...$$&lt;/code&gt; 或者 &lt;code&gt;\[...\]&lt;/code&gt; 表示。分隔符内的数学公式语法参考LaTeX语法。KaTeX所支持的符号和函数可以在&lt;a href=&#34;https://katex.org/docs/supported.html&#34;&gt;KaTeX Supported Functions&lt;/a&gt;中找到。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;# 示例代码
+
+$$ x \href{why-equal.html}{=} y^2 + 1 $$
+
+\( x = {-b \pm \sqrt{b^2-4ac} \over 2a} \)&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;示例效果：&lt;/p&gt;
+
+&lt;p&gt;$$ x \href{why-equal.html}{=} y^2 + 1 $$&lt;/p&gt;
+
+&lt;p&gt;( x = {-b \pm \sqrt{b^2-4ac} \over 2a} )&lt;/p&gt;
+
+&lt;h3 id=&#34;脚注&#34;&gt;脚注&lt;/h3&gt;
+
+&lt;p&gt;脚注的使用方法是在插入位置插入一对中括号，其中内容以&lt;code&gt;^&lt;/code&gt;+&lt;code&gt;脚注id&lt;/code&gt;。然后在全文最后添加对该id的说明内容。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;# 示例代码
+
+Markdown[^1]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;示例效果：&lt;/p&gt;
+
+&lt;p&gt;Markdown&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;流程图&#34;&gt;流程图&lt;/h3&gt;
+
+&lt;p&gt;Markdown Preview Enhanced支持flow charts, sequence diagrams, mermaid, PlantUML, WaveDrom, GraphViz，Vega &amp;amp; Vega-lite，Ditaa格式代码的流程图渲染，并且也可以通过运行代码框内的TikZ, Python Matplotlib, Plotly等代码来得到流程图。具体内容可参考&lt;a href=&#34;https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/diagrams&#34;&gt;MPE说明文档流程图部分&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-flow&#34; data-lang=&#34;flow&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-flow&#34; data-lang=&#34;flow&#34;&gt;st=&amp;gt;start:Start:&amp;gt;http://www.google.com[blank]
+e=&amp;gt;end:&amp;gt;http://www.google.com
+opl=&amp;gt;operation: My Operationv
+sub1=&amp;gt;subroutine: My subroutine
+cond=&amp;gt;cindition: Yes
+or No?&amp;#34;&amp;gt;http://www.google.com
+io=&amp;gt;inputoutout: catch somthing
+
+st-&amp;gt;op1-&amp;gt;cond
+cond(yes)-&amp;gt;io-&amp;gt;e
+cond(no)-&amp;gt;sub1(right)-&amp;gt;op1&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;sequence流程图&#34;&gt;Sequence流程图&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sequence {theme=&#34;hand&#34;}&#34; data-lang=&#34;sequence {theme=&#34;hand&#34;}&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sequence {theme=&#34;hand&#34;}&#34; data-lang=&#34;sequence {theme=&#34;hand&#34;}&#34;&gt;Andrew-&amp;gt;China:Says Helo
+Note right of China: China thinks\nabout it
+China--&amp;gt;Andrew: How are you ?
+Andrew -&amp;gt;&amp;gt; China: I am good thanks!&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;mermaid流程图&#34;&gt;mermaid流程图&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph LR
+A --&amp;gt; B
+B --&amp;gt; C
+C --&amp;gt; A&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;plantuml&#34;&gt;PlantUML&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-puml&#34; data-lang=&#34;puml&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-puml&#34; data-lang=&#34;puml&#34;&gt;A -&amp;gt; B&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-puml&#34; data-lang=&#34;puml&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-puml&#34; data-lang=&#34;puml&#34;&gt;@startuml
+A -&amp;gt; B
+B -&amp;gt; C
+@enduml&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;graphviz&#34;&gt;GraphViz&lt;/h4&gt;
+
+&lt;p&gt;MPE使用 Viz.js 来渲染 dot 语言流程图。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-dot&#34; data-lang=&#34;dot&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-dot&#34; data-lang=&#34;dot&#34;&gt;digraph G {
+    A -&amp;gt; B;
+    B -&amp;gt; C;
+    B -&amp;gt; D;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;gantt
+dateFormat YYYY-MM-DD
+section S1
+T1: 2014-01-01, 9d
+section S2
+T2: 2014-01-11, 9d
+section S3
+T3: 2014-01-02, 9d&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;ditaa&#34;&gt;ditaa&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-ditaa {cmd=true args=[&#34;-E&#34;]}&#34; data-lang=&#34;ditaa {cmd=true args=[&#34;-E&#34;]}&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-ditaa {cmd=true args=[&#34;-E&#34;]}&#34; data-lang=&#34;ditaa {cmd=true args=[&#34;-E&#34;]}&#34;&gt;  +--------+   +-------+    +-------+
+  |        | --+ ditaa +--&amp;gt; |       |
+  |  Text  |   +-------+    |diagram|
+  |Document|   |!magic!|    |       |
+  |     {d}|   |       |    |       |
+  +---+----+   +-------+    +-------+
+      :                         ^
+      |       Lots of work      |
+      +-------------------------+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python {cmd=true matplotlib=true}&#34; data-lang=&#34;python {cmd=true matplotlib=true}&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python {cmd=true matplotlib=true}&#34; data-lang=&#34;python {cmd=true matplotlib=true}&#34;&gt;import matplotlib.pyplot as plt
+plt.plot([1,2,3, 4])
+plt.show() # show figure&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;导入文件&#34;&gt;导入文件&lt;/h3&gt;
+
+&lt;p&gt;支持导入的文件包括：图片（.jpeg(.jpg), .gif, .png, .apng, .svg, .bmp），表格（.csv）,pdf文档，流程图代码文件（.mermaid， .plantuml(.puml) .dot），html文件，md文件，.less和.css文件，在线文件，其他文件将视为代码块。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;# 示例代码
+@import &amp;#34;test.csv&amp;#34;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;插入视频&#34;&gt;插入视频&lt;/h3&gt;
+
+&lt;p&gt;需要借助第三方工具。&lt;/p&gt;
+
+&lt;h2 id=&#34;参考资料&#34;&gt;参考资料&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.appinn.com/markdown/#html&#34;&gt;Markdown 语法说明 (简体中文版)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jianshu.com/p/13b3366f0260&#34;&gt;在markdown中如何加入上标、下标？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://shd101wyy.github.io/markdown-preview-enhanced/#/&#34;&gt;markdown-preview-enhanced插件说明文档&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;Markdown是一种纯文本标记语言 
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description>
+      
+    </item>
     
     <item>
       <title>Git bash中文显示问题</title>
@@ -1191,10 +2107,10 @@ so, such as in this example:&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://knightwupz.github.io/post/markdown-preview-enhanced%E4%B8%8E%E9%BB%98%E8%AE%A4markdown%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99%E6%9C%89%E4%BA%9B%E5%8C%BA%E5%88%AB/</link>
+      <link>https://knightwupz.github.io/post/blogs/markdown-preview-enhanced%E4%B8%8E%E9%BB%98%E8%AE%A4markdown%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99%E6%9C%89%E4%BA%9B%E5%8C%BA%E5%88%AB/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://knightwupz.github.io/post/markdown-preview-enhanced%E4%B8%8E%E9%BB%98%E8%AE%A4markdown%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99%E6%9C%89%E4%BA%9B%E5%8C%BA%E5%88%AB/</guid>
+      <guid>https://knightwupz.github.io/post/blogs/markdown-preview-enhanced%E4%B8%8E%E9%BB%98%E8%AE%A4markdown%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99%E6%9C%89%E4%BA%9B%E5%8C%BA%E5%88%AB/</guid>
       
         <description>
 

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>notes on 泽郴老仙 —— 目前只是学习笔记</title>
-    <link>https://knightwupz.github.io/categories/notes/</link>
-    <description>Recent content in notes on 泽郴老仙 —— 目前只是学习笔记</description>
+    <title>markdown on 泽郴老仙 —— 目前只是学习笔记</title>
+    <link>https://knightwupz.github.io/tags/markdown/</link>
+    <description>Recent content in markdown on 泽郴老仙 —— 目前只是学习笔记</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 10 Jun 2019 17:30:05 +0800</lastBuildDate>
     
-	<atom:link href="https://knightwupz.github.io/categories/notes/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://knightwupz.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -912,15 +912,6 @@ plt.show() # show figure&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tabl
 &lt;li&gt;&lt;a href=&#34;https://www.jianshu.com/p/13b3366f0260&#34;&gt;在markdown中如何加入上标、下标？&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://shd101wyy.github.io/markdown-preview-enhanced/#/&#34;&gt;markdown-preview-enhanced插件说明文档&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;</description>
-    </item>
-    
-    <item>
-      <title>Git bash中文显示问题</title>
-      <link>https://knightwupz.github.io/post/pipelines/git-bash%E4%B8%AD%E6%96%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</link>
-      <pubDate>Fri, 07 Jun 2019 16:01:23 +0800</pubDate>
-      
-      <guid>https://knightwupz.github.io/post/pipelines/git-bash%E4%B8%AD%E6%96%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</guid>
-      <description>git bash中文显示问题 在Windows中使用git bash遇到了中文乱码的问题，当提交中文名字的文档“Git的基本使用方法.md”并添加评论</description>
     </item>
     
   </channel>
